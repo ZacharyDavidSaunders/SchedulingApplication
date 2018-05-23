@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingApplication.Controllers.ModifyAppointmentController">
+   <children>
+      <VBox prefHeight="615.0" prefWidth="625.0">
+         <children>
+            <Label text="Modify Appointment">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="150.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <HBox layoutX="10.0" layoutY="84.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Customer:">
+                     <HBox.margin>
+                        <Insets left="193.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="customersChoiceBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="38.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Title:">
+                     <HBox.margin>
+                        <Insets left="225.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="titleTextField" promptText="Title">
+                     <HBox.margin>
+                        <Insets left="39.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="84.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Description:">
+                     <HBox.margin>
+                        <Insets left="181.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="descriptionChoiceBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="39.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="124.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Location:">
+                     <HBox.margin>
+                        <Insets left="198.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="locationTextField" promptText="Location">
+                     <HBox.margin>
+                        <Insets left="39.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="164.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Contact:">
+                     <HBox.margin>
+                        <Insets left="202.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="contactTextField" promptText="Contact">
+                     <HBox.margin>
+                        <Insets left="39.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="204.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="URL:">
+                     <HBox.margin>
+                        <Insets left="225.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="urlTextField" promptText="URL">
+                     <HBox.margin>
+                        <Insets left="39.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="244.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Day:">
+                     <HBox.margin>
+                        <Insets left="225.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="dayTextField" promptText="Day">
+                     <HBox.margin>
+                        <Insets left="41.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="284.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Starting Hour (using 24hr notation):">
+                     <HBox.margin>
+                        <Insets left="41.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="startingHourTextField" promptText="Starting Hour">
+                     <HBox.margin>
+                        <Insets left="33.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="324.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Starting Minute (using 2 digit notation):">
+                     <HBox.margin>
+                        <Insets left="29.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="startingMinuteTextField" promptText="Starting Minute">
+                     <HBox.margin>
+                        <Insets left="24.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="364.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Ending Hour (using 24hr notation):">
+                     <HBox.margin>
+                        <Insets left="48.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="endingHourTextField" promptText="Ending Hour">
+                     <HBox.margin>
+                        <Insets left="33.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="404.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <Label text="Ending Minute (using 2 digit notation):">
+                     <HBox.margin>
+                        <Insets left="39.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="endingMinuteTextField" promptText="Ending Minute">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="444.0" prefHeight="40.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onCancelButtonPress" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="240.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onSaveButtonPress" text="Save" />
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="errorLabel" text="ErrorMessage" textFill="RED" visible="false">
+               <VBox.margin>
+                  <Insets left="150.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

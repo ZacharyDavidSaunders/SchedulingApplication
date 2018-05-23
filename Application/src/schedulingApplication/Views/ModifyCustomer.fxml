@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingApplication.Controllers.ModifyCustomerController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label text="Modify Customer">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="150.0" top="25.0" />
+               </VBox.margin>
+            </Label>
+            <HBox layoutX="10.0" layoutY="79.0" prefHeight="40.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Name:">
+                     <HBox.margin>
+                        <Insets left="175.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="nameTextField" promptText="Name" />
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Phone Number:">
+                     <HBox.margin>
+                        <Insets left="119.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="phoneNumberTextField" promptText="Phone Number" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="119.0" prefHeight="40.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Address:">
+                     <HBox.margin>
+                        <Insets left="159.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="addressTextField" promptText="Address" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="174.0" prefHeight="40.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Address (Line Two):">
+                     <HBox.margin>
+                        <Insets left="91.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="address2TextField" promptText="Address (Line Two)" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="214.0" prefHeight="40.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="City:">
+                     <HBox.margin>
+                        <Insets left="186.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="cityTextField" promptText="City" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="254.0" prefHeight="40.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Postal Code:">
+                     <HBox.margin>
+                        <Insets left="137.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="postalCodeTextField" promptText="Postal Code" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="294.0" prefHeight="40.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Country:">
+                     <HBox.margin>
+                        <Insets left="162.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="countryTextField" promptText="Country" />
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onCancelButtonPress" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="225.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onSaveButtonPress" text="Save" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

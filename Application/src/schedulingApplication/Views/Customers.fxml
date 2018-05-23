@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingApplication.Controllers.CustomersController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="700.0">
+         <children>
+            <Label text="Customers">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="250.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="Select a table row to edit or delete customer data.">
+               <VBox.margin>
+                  <Insets left="180.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="customerTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="650.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="197.0" text="Name" />
+                  <TableColumn fx:id="addressColumn" prefWidth="272.0" text="Address" />
+                  <TableColumn fx:id="phoneColumn" prefWidth="180.0" text="Phone Number" />
+              </columns>
+               <VBox.margin>
+                  <Insets left="25.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onAddButtonPress" text="Add">
+                     <HBox.margin>
+                        <Insets left="265.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onModifyButtonPress" text="Modify" />
+                  <Button mnemonicParsing="false" onAction="#onDeleteButtonPress" text="Delete" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="errorLabel" text="ERROR: Please select a table row to perform that action." textFill="#fc0000" visible="false">
+               <VBox.margin>
+                  <Insets left="185.0" />
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#onReturnToYourDashboardButtonPress" text="Return To Your Dashboard">
+               <VBox.margin>
+                  <Insets left="270.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
